@@ -46,31 +46,6 @@
             "title": "Extra Stuff"
         }, 
         {
-            "location": "/Editing-the-Wiki/", 
-            "text": "The wiki needs to be written in a certain format in order to convert cleanly to the pretty static pages with mkdocs. The reason for this is mkdocs uses python markdown and github uses github flavoured markdown, so there are some minor issues of formatting that will need to be addressed.\n\n\nHeadings\n\n\nThe headings (defined by \n#\n) should follow a natural progression of the hierarchy of the page contents. You cannot have two title headings otherwise they won't show up on the table of contents on the right side of the page\n\n\nE.G.\n\n\n# Title\n## Main heading one\n### Sub Heading one\n### Sub heading two\n## Main heading two\n\n\n\n\netc.\n\n\nLinks\n\n\nLinks should follow this syntax\n\n\n[Link](path to link)\n\n\n\n\nIf it is a link to another wiki page it should be a relative path:\n\n\n[First Installation](First-Installation)\n\n\n\n\nNOT\n\n\n[First Installation](https://github.com/retropie/retropie-setup/wiki/First-Installation)\n\n\n\n\nCode Blocks\n\n\nCode blocks should be created with backticks: 1 set for inline code highlighting and 3 for code blocks\n\n\nInline code highlights:\n\n\n`inline`\n\n\nwill render as:\n\ninline\n \n\n\nCode blocks:\n\n\n```\n\n\ncode block\n\n\n```\n \n\n\nwill render as \n\n\ncode block\n\n\n\n\nBullets\n\n\nIf you are doing subnests on bullet points you need 4 spaces on the sub bullet, not two more explanation \nHERE\n:\n\n\n- Bullet one\n    - Bullet sub\n````\nIt should render like this:\n\n- Bullet one\n    - Bullet sub\n\n### Numbering\n\nNumbers will only order properly if in a listed sequence. If that sequence is broken by paragraphs then the numbering will restart.\n\nNumbered lists are formatted as follows:\n\n\n\n\n\n\nitem 1\n\n\nitem 2\n\n\nitem 3\n\n\nitem 4\n\n\n\n\nIf they are not in a listed sequence then you can just label the numbers manually with:\n\n\n\n\nStep 1.\nStep 2.\nStep 3.\n\n\netc. or you can just use bullet points if the numbers really aren't that important.\n\n### Symbols/Emojis\n\nEmojis are not supported with python markdown and should be avoided. Rather important text should be bolded or italicised\n\nThe following in github:\n\n\n\n\n:exclamation:\n\n\nrenders to :exclamation:\n\nbut in the generated docs it will show\n\n\n\n\n:exclamation:\n\n\n\n\nThis is a comment inside the `.md` file and isn't rendered:\n\n\n\n\n```", 
-            "title": "Editing the Wiki"
-        }, 
-        {
-            "location": "/Editing-the-Wiki/#headings", 
-            "text": "The headings (defined by  # ) should follow a natural progression of the hierarchy of the page contents. You cannot have two title headings otherwise they won't show up on the table of contents on the right side of the page  E.G.  # Title\n## Main heading one\n### Sub Heading one\n### Sub heading two\n## Main heading two  etc.", 
-            "title": "Headings"
-        }, 
-        {
-            "location": "/Editing-the-Wiki/#links", 
-            "text": "Links should follow this syntax  [Link](path to link)  If it is a link to another wiki page it should be a relative path:  [First Installation](First-Installation)  NOT  [First Installation](https://github.com/retropie/retropie-setup/wiki/First-Installation)", 
-            "title": "Links"
-        }, 
-        {
-            "location": "/Editing-the-Wiki/#code-blocks", 
-            "text": "Code blocks should be created with backticks: 1 set for inline code highlighting and 3 for code blocks  Inline code highlights:  `inline`  will render as: inline    Code blocks:  ```  code block  ```    will render as   code block", 
-            "title": "Code Blocks"
-        }, 
-        {
-            "location": "/Editing-the-Wiki/#bullets", 
-            "text": "If you are doing subnests on bullet points you need 4 spaces on the sub bullet, not two more explanation  HERE :  - Bullet one\n    - Bullet sub\n````\nIt should render like this:\n\n- Bullet one\n    - Bullet sub\n\n### Numbering\n\nNumbers will only order properly if in a listed sequence. If that sequence is broken by paragraphs then the numbering will restart.\n\nNumbered lists are formatted as follows:   item 1  item 2  item 3  item 4   If they are not in a listed sequence then you can just label the numbers manually with:  Step 1.\nStep 2.\nStep 3.  etc. or you can just use bullet points if the numbers really aren't that important.\n\n### Symbols/Emojis\n\nEmojis are not supported with python markdown and should be avoided. Rather important text should be bolded or italicised\n\nThe following in github:  :exclamation:  renders to :exclamation:\n\nbut in the generated docs it will show  :exclamation:  \n\nThis is a comment inside the `.md` file and isn't rendered:  ```", 
-            "title": "Bullets"
-        }, 
-        {
             "location": "/about/", 
             "text": "Check here: http://retroachievements.org", 
             "title": "About"
