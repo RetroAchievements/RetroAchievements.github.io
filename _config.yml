@@ -1,0 +1,14 @@
+name: RetroAchievements
+title: RetroAchievements
+description: "Adding achievements to your favourite retro games since 2012."
+tagline: "home"
+keywords: retroachievements, retrogames, nes, megadrive, gameboy, gba, n64, mastersystem, snes, pcengine, atari, lynx
+
+url: "http://retroachievements.github.io"
+baseurl: "/"
+
+github:
+  repo: "https://github.com/RetroAchievements/RetroAchievements.github.io"
+
+#markdown: kramdown
+#highlighter: rouge
