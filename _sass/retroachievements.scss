@@ -25,16 +25,24 @@ $content-width: 960px !default;
 
 $on-palm: 600px !default;
 $on-laptop: 840px !default;
+$on-monitor: 1200px !default;
+$on-large-screen: 1600px !default;
 
 // Use media queries like this:
-// @include media-query($on-palm) {
+// @include media-query-down($on-palm) {
 //   .wrapper {
 //     padding-right: $spacing-unit / 2;
 //     padding-left: $spacing-unit / 2;
 //   }
 // }
-@mixin media-query($device) {
+@mixin media-query-down($device) {
     @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin media-query-up($device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }
