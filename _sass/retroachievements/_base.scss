@@ -21,6 +21,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
 }
 
 * {
@@ -89,7 +90,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
+        color: $link-color-active;
         text-decoration: underline;
     }
 
@@ -187,7 +188,7 @@ pre {
 
 .social-media-list {
     .icon {
-        padding-right: 5px;
+        padding-right: 1px;
     }
 
     li {
@@ -200,12 +201,26 @@ pre {
     }
 }
 
+.lead {
+    text-align: center;
+    font-size: $base-font-size * 1.8;
+    font-weight: bold;
+
+    @include media-query($on-palm) {
+        font-size: $base-font-size;
+    }
+}
+
 .buttons {
     padding: $spacing-unit * 3 0;
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+
+    @include media-query($on-palm) {
+        padding: $spacing-unit * 1 0;
+    }
 
     .btn {
         text-align: center;
@@ -216,7 +231,8 @@ pre {
         border: 2px solid #141414;
         border-radius: 10px;
         background: #000;
-        min-width: 280px;
+        min-width: 240px;
+        font-weight: normal;
 
         //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a2a2a', endColorstr='#1a1a1a');
         //background: -webkit-gradient(linear, left top, left bottom, from(#2a2a2a), to(#1a1a1a));

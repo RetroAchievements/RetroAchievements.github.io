@@ -105,6 +105,10 @@
     padding: $spacing-unit * 0.5 0 $spacing-unit * 3;
     font-weight: 300;
     text-align: center;
+
+    @include media-query($on-palm) {
+        padding: $spacing-unit * 0.5 0 $spacing-unit * 2;
+    }
 }
 
 .footer-heading {
@@ -178,6 +182,7 @@
 
 .page-heading {
     @include relative-font-size(1.25);
+    margin-top: $base-font-size / 2;
 }
 
 .post-list {
