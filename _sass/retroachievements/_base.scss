@@ -85,9 +85,9 @@ a {
     color: $link-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($link-color, 15%);
-    }
+    //&:visited {
+    //    color: darken($link-color, 15%);
+    //}
 
     &:hover {
         color: $link-color-active;
