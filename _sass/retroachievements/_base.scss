@@ -210,9 +210,9 @@ pre {
     .btn {
         text-align: center;
         margin: $spacing-unit / 2;
-        font-size: $base-font-size * 1.1;
+        font-size: $base-font-size * 1;
         //padding: 5px 20px;
-        padding: 18px 30px;
+        padding: $base-font-size 30px;
         border: 2px solid #141414;
         border-radius: 10px;
         background: #000;
@@ -235,7 +235,7 @@ pre {
             font-size: $base-font-size * 3.5;
             line-height: 1em;
             overflow: hidden;
-            margin-bottom: $base-font-size;
+            margin-bottom: $base-font-size / 2;
             &:before {
                 display: block;
                 width: 100%;
