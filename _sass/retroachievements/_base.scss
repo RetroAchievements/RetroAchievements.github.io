@@ -23,6 +23,10 @@ body {
     font-kerning: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -206,13 +210,13 @@ pre {
     .btn {
         text-align: center;
         margin: $spacing-unit / 2;
-        font-size: $base-font-size * 1.2;
+        font-size: $base-font-size * 1.1;
         //padding: 5px 20px;
         padding: 10px 30px;
         border: 2px solid #141414;
         border-radius: 10px;
         background: #000;
-        min-width: 260px;
+        min-width: 280px;
 
         //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a2a2a', endColorstr='#1a1a1a');
         //background: -webkit-gradient(linear, left top, left bottom, from(#2a2a2a), to(#1a1a1a));
@@ -244,7 +248,7 @@ pre {
 .btn {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: 300;
     letter-spacing: 1px;
     &:hover, &:focus {
         text-decoration: none;
