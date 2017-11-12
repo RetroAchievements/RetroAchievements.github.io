@@ -210,9 +210,9 @@ pre {
     .btn {
         text-align: center;
         margin: $spacing-unit / 2;
-        font-size: $base-font-size * 1.1;
+        font-size: $base-font-size * 1;
         //padding: 5px 20px;
-        padding: 10px 30px;
+        padding: $base-font-size 30px;
         border: 2px solid #141414;
         border-radius: 10px;
         background: #000;
@@ -232,10 +232,13 @@ pre {
 
         .icon-xl {
             display: block;
-            font-size: $base-font-size * 5;
+            font-size: $base-font-size * 3.5;
             line-height: 1em;
+            overflow: hidden;
+            margin-bottom: $base-font-size / 2;
             &:before {
-                margin: 0;
+                display: block;
+                width: 100%;
             }
         }
 
