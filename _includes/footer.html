@@ -1,0 +1,37 @@
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="footer-col-wrapper">
+            <ul class="contact-list">
+                <li>
+                    {% if site.author %}
+                    {{ site.author | escape }}
+                    {% else %}
+                    {{ site.title | escape }}
+                    {% endif %}
+                </li>
+                {% if site.email %}
+                <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                {% endif %}
+            </ul>
+            <ul class="social-media-list">
+                {% if site.github_username %}
+                <li>
+                    {% include icon-github.html username=site.github_username %}
+                </li>
+                {% endif %}
+
+                {% if site.twitter_username %}
+                <li>
+                    {% include icon-twitter.html username=site.twitter_username %}
+                </li>
+                {% endif %}
+
+                {% if site.discord_invite %}
+                <li>
+                    {% include icon-discord.html invite=site.discord_invite %}
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</footer>
