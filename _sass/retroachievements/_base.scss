@@ -25,10 +25,11 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    text-shadow: 0 0 7px rgba(0, 0, 0, 1);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a2a2a', endColorstr='#1a1a1a');
-    background: -webkit-gradient(linear, left top, left bottom, from(#2a2a2a), to($background-color));
-    background: -moz-linear-gradient(top, #2a2a2a, $background-color);
+    text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    background: $background-color;
+    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a2a2a', endColorstr='#1a1a1a');
+    //background: -webkit-gradient(linear, left top, left bottom, from(#2a2a2a), to($background-color));
+    //background: -moz-linear-gradient(top, #2a2a2a, $background-color);
     //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a1a1a', endColorstr='#2a2a2a');
     //background: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), to(#2a2a2a));
     //background: -moz-linear-gradient(top, #1a1a1a, #2a2a2a);
@@ -237,7 +238,7 @@ pre {
     }
 
     @include media-query-up($on-large-screen) {
-        padding: $spacing-unit * 2 0;
+        //padding: $spacing-unit * 2 0;
     }
 
     .btn {
@@ -249,7 +250,7 @@ pre {
         border: 2px solid #141414;
         border-radius: 10px;
         //background: #14181B;
-        background: #111;
+        background: #0a0a0a;
         min-width: 240px;
         font-weight: normal;
 
