@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://retroachievements.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: RetroCheevos
 github_username:  RetroAchievements
-discord_invite: https://discord.gg/TdfC3r7
+discord_invite: https://discord.gg/dq2E4hE
 
 # Build settings
 markdown: kramdown
